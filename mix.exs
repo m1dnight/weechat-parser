@@ -7,7 +7,12 @@ defmodule WeechatParser.MixProject do
       version: "0.1.0",
       elixir: "~> 1.9",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      package: package(),
+      deps: deps(),
+      name: "weechat-parser",
+      source_url: "https://github.com/m1dnight/weechat-parser",
+      description: description()
     ]
   end
 
@@ -24,13 +29,16 @@ defmodule WeechatParser.MixProject do
     ]
   end
 
+  defp description() do
+    "Parses Weechat logs into Structs using Nimble."
+  end
+
   defp package() do
     [
       # This option is only needed when you don't want to use the OTP application name
       name: "weechat_parser",
       # These are the default files included in the package
-      files: ~w(lib .formatter.exs mix.exs README* readme* LICENSE*
-                license* CHANGELOG* changelog*),
+      files: ~w(lib .formatter.exs mix.exs README* LICENSE*),
       licenses: ["Apache-2.0"],
       links: %{"GitHub" => "https://github.com/m1dnight/weechat-parser"}
     ]
