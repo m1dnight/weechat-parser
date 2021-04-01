@@ -55,6 +55,23 @@ defmodule WeechatParserTest do
     assert parsed == expected
   end
 
+  test "leave" do
+    line = "2021-03-28 00:36:59	<--	Putonlalla (~sapekiis@it-cyan.it.jyu.fi) has quit (Ping timeout: 246 seconds)"
+
+    parsed = WeechatParser.parse_log_line(line)
+
+    expected =
+      {:ok,
+       %WeechatParser.Leave{
+         host: "~sapekiis@it-cyan.it.jyu.fi",
+         nick: "Putonlalla",
+         reason: "Ping timeout: 246 seconds",
+         timestamp: ~U[2021-03-28 00:36:59Z]
+       }}
+
+    assert parsed == expected
+  end
+
   test "leave double hash" do
     line = "2018-12-21 18:38:06	<--	deathwishdave (~deathwish@90.253.191.182) has quit (Client Quit)"
 

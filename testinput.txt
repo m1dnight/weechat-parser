@@ -1,0 +1,378 @@
+2021-03-28 00:28:06	-->	borne (~fritjof@200116b8640fd800f7ed9fd86a2491f0.dip.versatel-1u1.de) has joined #coq
+2021-03-28 00:36:59	<--	Putonlalla (~sapekiis@it-cyan.it.jyu.fi) has quit (Ping timeout: 246 seconds)
+2021-03-28 00:37:53	-->	Putonlalla (~sapekiis@it-cyan.it.jyu.fi) has joined #coq
+2021-03-28 01:15:40	<--	Tuplanolla (~Tuplanoll@91-159-68-239.elisa-laajakaista.fi) has quit (Quit: Leaving.)
+2021-03-28 01:25:36	<--	zebrag (~inkbottle@aaubervilliers-654-1-98-245.w86-212.abo.wanadoo.fr) has quit (Quit: Konversation terminated!)
+2021-03-28 01:25:59	-->	zebrag (~inkbottle@aaubervilliers-654-1-98-245.w86-212.abo.wanadoo.fr) has joined #coq
+2021-03-28 01:35:15	<--	borne (~fritjof@200116b8640fd800f7ed9fd86a2491f0.dip.versatel-1u1.de) has quit (Ping timeout: 240 seconds)
+2021-03-28 03:25:35	<--	zebrag (~inkbottle@aaubervilliers-654-1-98-245.w86-212.abo.wanadoo.fr) has quit (Quit: Konversation terminated!)
+2021-03-28 03:25:58	-->	zebrag (~inkbottle@aaubervilliers-654-1-98-245.w86-212.abo.wanadoo.fr) has joined #coq
+2021-03-28 03:48:29	-->	mbuf (~Shakthi@122.174.164.92) has joined #coq
+2021-03-28 03:59:55	<--	megane (~megane@unaffiliated/megane) has quit (Ping timeout: 265 seconds)
+2021-03-28 04:06:42	-->	megane (~megane@unaffiliated/megane) has joined #coq
+2021-03-28 04:14:06	<--	megane (~megane@unaffiliated/megane) has quit (Ping timeout: 240 seconds)
+2021-03-28 04:21:32	-->	megane (~megane@unaffiliated/megane) has joined #coq
+2021-03-28 04:25:35	<--	zebrag (~inkbottle@aaubervilliers-654-1-98-245.w86-212.abo.wanadoo.fr) has quit (Quit: Konversation terminated!)
+2021-03-28 04:25:58	-->	zebrag (~inkbottle@aaubervilliers-654-1-98-245.w86-212.abo.wanadoo.fr) has joined #coq
+2021-03-28 05:16:52	<--	Guest55480 (~m0rphism@HSI-KBW-085-216-104-059.hsi.kabelbw.de) has quit (Ping timeout: 252 seconds)
+2021-03-28 05:18:19	<--	roconnor (~roconnor@host-45-58-230-226.dyn.295.ca) has quit (Ping timeout: 258 seconds)
+2021-03-28 05:19:15	-->	roconnor (~roconnor@host-45-58-230-226.dyn.295.ca) has joined #coq
+2021-03-28 06:02:37	<--	zebrag (~inkbottle@aaubervilliers-654-1-98-245.w86-212.abo.wanadoo.fr) has quit (Quit: Konversation terminated!)
+2021-03-28 08:54:09	-->	idhugo_ (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has joined #coq
+2021-03-28 10:10:17	-->	borne (~fritjof@200116b8644f3500f7ed9fd86a2491f0.dip.versatel-1u1.de) has joined #coq
+2021-03-28 10:26:35	<--	idhugo_ (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has quit (Ping timeout: 265 seconds)
+2021-03-28 10:29:37	-->	idhugo_ (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has joined #coq
+2021-03-28 10:35:39	-->	Tuplanolla (~Tuplanoll@91-159-68-239.elisa-laajakaista.fi) has joined #coq
+2021-03-28 11:42:04	-->	Guest55480 (~m0rphism@HSI-KBW-085-216-104-059.hsi.kabelbw.de) has joined #coq
+2021-03-28 11:44:31	<--	RalfJ (~quassel@r-passerv.ralfj.de) has quit (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+2021-03-28 11:45:28	-->	RalfJ (~quassel@r-passerv.ralfj.de) has joined #coq
+2021-03-28 12:40:31	<--	borne (~fritjof@200116b8644f3500f7ed9fd86a2491f0.dip.versatel-1u1.de) has quit (Ping timeout: 250 seconds)
+2021-03-28 14:37:38	-->	zebrag (~inkbottle@aaubervilliers-654-1-98-245.w86-212.abo.wanadoo.fr) has joined #coq
+2021-03-28 15:25:38	<--	zebrag (~inkbottle@aaubervilliers-654-1-98-245.w86-212.abo.wanadoo.fr) has quit (Quit: Konversation terminated!)
+2021-03-28 15:25:58	-->	zebrag (~inkbottle@aaubervilliers-654-1-98-245.w86-212.abo.wanadoo.fr) has joined #coq
+2021-03-28 16:06:33	<--	idhugo_ (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has quit (Remote host closed the connection)
+2021-03-28 16:06:59	-->	idhugo_ (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has joined #coq
+2021-03-28 16:20:33	<--	idhugo_ (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has quit (Ping timeout: 260 seconds)
+2021-03-28 16:59:57	<--	cantstanya (~chatting@gateway/tor-sasl/cantstanya) has quit (Ping timeout: 240 seconds)
+2021-03-28 17:04:41	-->	cantstanya (~chatting@gateway/tor-sasl/cantstanya) has joined #coq
+2021-03-28 17:25:38	<--	zebrag (~inkbottle@aaubervilliers-654-1-98-245.w86-212.abo.wanadoo.fr) has quit (Quit: Konversation terminated!)
+2021-03-28 17:25:59	-->	zebrag (~inkbottle@aaubervilliers-654-1-98-245.w86-212.abo.wanadoo.fr) has joined #coq
+2021-03-28 17:35:37	<--	artart78 (~artart78@2001:41d0:a:3ba6::1) has quit (Ping timeout: 250 seconds)
+2021-03-28 18:09:13	-->	idhugo_ (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has joined #coq
+2021-03-28 18:14:46	<--	idhugo_ (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has quit (Ping timeout: 268 seconds)
+2021-03-28 18:41:46	<--	mbuf (~Shakthi@122.174.164.92) has quit (Quit: Leaving)
+2021-03-28 19:10:01	<--	ByronJohnson (~bairyn@unaffiliated/bob0) has quit (Ping timeout: 260 seconds)
+2021-03-28 19:16:27	-->	ByronJohnson (~bairyn@unaffiliated/bob0) has joined #coq
+2021-03-28 19:25:38	<--	zebrag (~inkbottle@aaubervilliers-654-1-98-245.w86-212.abo.wanadoo.fr) has quit (Quit: Konversation terminated!)
+2021-03-28 19:25:58	-->	zebrag (~inkbottle@aaubervilliers-654-1-98-245.w86-212.abo.wanadoo.fr) has joined #coq
+2021-03-28 20:00:14	-->	borne (~fritjof@200116b8644f3500f7ed9fd86a2491f0.dip.versatel-1u1.de) has joined #coq
+2021-03-28 20:09:32	-->	artart78 (~artart78@2001:41d0:a:3ba6::1) has joined #coq
+2021-03-28 20:11:05	<--	artart78 (~artart78@2001:41d0:a:3ba6::1) has quit (Changing host)
+2021-03-28 20:11:05	-->	artart78 (~artart78@unaffiliated/artart78) has joined #coq
+2021-03-28 20:22:24	-->	idhugo_ (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has joined #coq
+2021-03-28 20:25:37	<--	zebrag (~inkbottle@aaubervilliers-654-1-98-245.w86-212.abo.wanadoo.fr) has quit (Quit: Konversation terminated!)
+2021-03-28 20:25:58	-->	zebrag (~inkbottle@aaubervilliers-654-1-98-245.w86-212.abo.wanadoo.fr) has joined #coq
+2021-03-28 20:28:19	<--	borne (~fritjof@200116b8644f3500f7ed9fd86a2491f0.dip.versatel-1u1.de) has quit (Ping timeout: 245 seconds)
+2021-03-28 21:34:09	-->	irccloud010 (uid493595@gateway/web/irccloud.com/x-cmcpduksxgjnnqmj) has joined #coq
+2021-03-28 21:36:11	<--	idhugo_ (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has quit (Ping timeout: 240 seconds)
+2021-03-28 23:11:32	-->	borne (~fritjof@200116b8644f3500f7ed9fd86a2491f0.dip.versatel-1u1.de) has joined #coq
+2021-03-28 23:25:37	<--	zebrag (~inkbottle@aaubervilliers-654-1-98-245.w86-212.abo.wanadoo.fr) has quit (Quit: Konversation terminated!)
+2021-03-28 23:25:58	-->	zebrag (~inkbottle@aaubervilliers-654-1-98-245.w86-212.abo.wanadoo.fr) has joined #coq
+2021-03-29 00:26:50	<--	Tuplanolla (~Tuplanoll@91-159-68-239.elisa-laajakaista.fi) has quit (Quit: Leaving.)
+2021-03-29 00:29:15	<--	nf (~n@monade.li) has quit (Quit: Fairfarren.)
+2021-03-29 00:30:59	-->	nf (~n@monade.li) has joined #coq
+2021-03-29 00:36:35	-->	ddere (uid110888@gateway/web/irccloud.com/x-ydfajrwtbkzcpvbs) has joined #coq
+2021-03-29 00:42:01	<--	justanotheruser (~justanoth@unaffiliated/justanotheruser) has quit (Ping timeout: 250 seconds)
+2021-03-29 00:45:07	<--	borne (~fritjof@200116b8644f3500f7ed9fd86a2491f0.dip.versatel-1u1.de) has quit (Ping timeout: 276 seconds)
+2021-03-29 00:45:48	-->	borne (~fritjof@2a06:8782:ffbb:1337:ce73:3416:bcd:fc35) has joined #coq
+2021-03-29 00:52:31	<--	megane (~megane@unaffiliated/megane) has quit (Ping timeout: 268 seconds)
+2021-03-29 01:09:34	-->	megane (~megane@unaffiliated/megane) has joined #coq
+2021-03-29 01:25:37	<--	zebrag (~inkbottle@aaubervilliers-654-1-98-245.w86-212.abo.wanadoo.fr) has quit (Quit: Konversation terminated!)
+2021-03-29 01:25:58	-->	zebrag (~inkbottle@aaubervilliers-654-1-98-245.w86-212.abo.wanadoo.fr) has joined #coq
+2021-03-29 02:37:17	-->	justanotheruser (~justanoth@unaffiliated/justanotheruser) has joined #coq
+2021-03-29 02:40:18	<--	megane (~megane@unaffiliated/megane) has quit (Ping timeout: 240 seconds)
+2021-03-29 02:47:46	-->	megane (~megane@unaffiliated/megane) has joined #coq
+2021-03-29 03:08:32	<--	Guest55480 (~m0rphism@HSI-KBW-085-216-104-059.hsi.kabelbw.de) has quit (Ping timeout: 265 seconds)
+2021-03-29 03:25:37	<--	zebrag (~inkbottle@aaubervilliers-654-1-98-245.w86-212.abo.wanadoo.fr) has quit (Quit: Konversation terminated!)
+2021-03-29 03:25:58	-->	zebrag (~inkbottle@aaubervilliers-654-1-98-245.w86-212.abo.wanadoo.fr) has joined #coq
+2021-03-29 03:37:31	<--	megane (~megane@unaffiliated/megane) has quit (Ping timeout: 260 seconds)
+2021-03-29 03:37:47	-->	megane (~megane@unaffiliated/megane) has joined #coq
+2021-03-29 03:59:41	<--	aindilis (~aindilis@172-12-3-117.lightspeed.sgnwmi.sbcglobal.net) has quit (Ping timeout: 260 seconds)
+2021-03-29 04:08:17	<--	borne (~fritjof@2a06:8782:ffbb:1337:ce73:3416:bcd:fc35) has quit (Ping timeout: 250 seconds)
+2021-03-29 05:49:25	<--	zebrag (~inkbottle@aaubervilliers-654-1-98-245.w86-212.abo.wanadoo.fr) has quit (Quit: Konversation terminated!)
+2021-03-29 07:14:36	<--	ByronJohnson (~bairyn@unaffiliated/bob0) has quit (Ping timeout: 246 seconds)
+2021-03-29 07:31:09	-->	aindilis (~aindilis@172-12-3-117.lightspeed.sgnwmi.sbcglobal.net) has joined #coq
+2021-03-29 07:33:54	<--	aindilis (~aindilis@172-12-3-117.lightspeed.sgnwmi.sbcglobal.net) has quit (Remote host closed the connection)
+2021-03-29 07:35:32	-->	aindilis (~aindilis@172-12-3-117.lightspeed.sgnwmi.sbcglobal.net) has joined #coq
+2021-03-29 07:46:33	-->	ByronJohnson (~bairyn@unaffiliated/bob0) has joined #coq
+2021-03-29 08:05:52	-->	Wojciech_K (~wojciech@81-18-220-25.static.chello.pl) has joined #coq
+2021-03-29 08:09:38	Wojciech_K	Hello! How to prove such lemma: https://ghostbin.co/paste/2mz9a5j ? It seems super-obvious, yet I have no idea how to explain it to my computer
+2021-03-29 08:18:53	siraben	Wojciech_K: unfold not. intros l. inversion l.
+2021-03-29 08:20:00	siraben	Wojciech_K: review inversion in https://softwarefoundations.cis.upenn.edu/lf-current/IndProp.html
+2021-03-29 08:20:40	siraben	but here you use it to try to "invert" the hypothesis, that is, find out what conditions have to hold for the hypothesis to be true. In this case it's impossible to construct a non empty list from nil, so the proof is done (absurd hypothesis)
+2021-03-29 08:22:44	Wojciech_K	Thank you!
+2021-03-29 08:36:42	-->	idhugo_ (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has joined #coq
+2021-03-29 09:11:18	-->	Guest55480 (~m0rphism@HSI-KBW-085-216-104-059.hsi.kabelbw.de) has joined #coq
+2021-03-29 09:26:00	-->	famubu (~famubu@117.206.45.74) has joined #coq
+2021-03-29 09:26:16	<--	ddere (uid110888@gateway/web/irccloud.com/x-ydfajrwtbkzcpvbs) has quit (Quit: Connection closed for inactivity)
+2021-03-29 09:27:06	famubu	Hi. I'm new to coq and came across something called `I` (as in https://coq.inria.fr/distrib/8.4beta2/stdlib/Coq.Init.Logic.html#I). What does it mean?
+2021-03-29 09:33:02	Putonlalla	It's the only constructor of `True` and, as such, the canonical proof of a tautology, famubu.
+2021-03-29 09:35:10	-->	borne (~fritjof@2a06:8782:ffbb:1337:ce73:3416:bcd:fc35) has joined #coq
+2021-03-29 09:39:16	famubu	Putonlalla: Thanks!
+2021-03-29 09:45:27	<--	borne (~fritjof@2a06:8782:ffbb:1337:ce73:3416:bcd:fc35) has quit (Ping timeout: 246 seconds)
+2021-03-29 09:47:25	-->	borne (~fritjof@200116b8648ef300f7ed9fd86a2491f0.dip.versatel-1u1.de) has joined #coq
+2021-03-29 10:09:38	<--	picolino (~picolino@45.228.4.93.rev.sfr.net) has quit (Ping timeout: 240 seconds)
+2021-03-29 10:14:49	-->	graf_blutwurst (~user@2001:171b:226e:adc0:3dbe:eebd:8040:b693) has joined #coq
+2021-03-29 10:24:15	siraben	famubu: if you are running coq on your computer, you can also do `Check I.` to find out
+2021-03-29 10:48:53	--	Guest42457 is now known as SIben
+2021-03-29 11:07:14	pgiarrusso	9:27 AM <famubu> Hi. I'm new to coq and came across something called `I` (as in https://coq.inria.fr/distrib/8.4beta2/stdlib/Coq.Init.Logic.html#I). What does it mean?
+2021-03-29 11:09:19	pgiarrusso	famubu: FYI, that link is for the stdlib of a very old Coq version (8.4), we're now at 8.13 (stdlib docs: https://coq.inria.fr/library/ )
+2021-03-29 11:09:57	Putonlalla	Did you become a believer of Agda yet, SIben?
+2021-03-29 11:10:07	pgiarrusso	(even if this point hasn't changed, lots of other things have)
+2021-03-29 11:10:58	SIben	Putonlalla: not quite yet :-)
+2021-03-29 11:11:21	SIben	I have been putting the finishing touches to the actual paper text now – not so much working on proofs :(
+2021-03-29 11:12:49	Putonlalla	That sounds like something I should be doing right now.
+2021-03-29 11:14:03	famubu	siraben: Yeah it gave as True.
+2021-03-29 11:14:41	famubu	pgiarrusso: Thanks. I just clicked on a link at the cpdt book. Didn't realize the version was that old.
+2021-03-29 11:15:49	pgiarrusso	Ah, fair, CPDT is that old. Most of its content is still accurate
+2021-03-29 12:37:39	<--	idhugo_ (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has quit (Ping timeout: 246 seconds)
+2021-03-29 13:00:37	-->	idhugo_ (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has joined #coq
+2021-03-29 13:03:36	<--	richbridger (~richbridg@089144195136.atnat0004.highway.a1.net) has quit (Remote host closed the connection)
+2021-03-29 13:14:24	<--	idhugo_ (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has quit (Ping timeout: 246 seconds)
+2021-03-29 13:17:50	<--	famubu (~famubu@117.206.45.74) has quit (Ping timeout: 252 seconds)
+2021-03-29 13:22:39	-->	idhugo_ (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has joined #coq
+2021-03-29 13:24:41	-->	idhugo__ (~idhugo@87-49-45-185-mobile.dk.customer.tdc.net) has joined #coq
+2021-03-29 13:24:57	-->	famubu (~famubu@42.111.144.225) has joined #coq
+2021-03-29 13:26:58	<--	idhugo_ (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has quit (Ping timeout: 240 seconds)
+2021-03-29 13:45:50	<--	famubu (~famubu@42.111.144.225) has quit (Read error: Connection reset by peer)
+2021-03-29 14:21:25	<--	Wojciech_K (~wojciech@81-18-220-25.static.chello.pl) has quit (Remote host closed the connection)
+2021-03-29 14:32:18	-->	famubu (~famubu@117.206.34.234) has joined #coq
+2021-03-29 14:38:14	-->	zebrag (~inkbottle@aaubervilliers-654-1-98-245.w86-212.abo.wanadoo.fr) has joined #coq
+2021-03-29 14:43:48	-->	picolino (~picolino@80.215.156.157) has joined #coq
+2021-03-29 15:25:58	<--	idhugo__ (~idhugo@87-49-45-185-mobile.dk.customer.tdc.net) has quit (Ping timeout: 240 seconds)
+2021-03-29 15:28:12	-->	idhugo__ (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has joined #coq
+2021-03-29 15:57:01	<--	graf_blutwurst (~user@2001:171b:226e:adc0:3dbe:eebd:8040:b693) has quit (Remote host closed the connection)
+2021-03-29 16:28:18	<--	borne (~fritjof@200116b8648ef300f7ed9fd86a2491f0.dip.versatel-1u1.de) has quit (Ping timeout: 246 seconds)
+2021-03-29 16:28:36	-->	borne (~fritjof@87.123.110.6) has joined #coq
+2021-03-29 17:00:06	<--	idhugo__ (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has quit (Ping timeout: 240 seconds)
+2021-03-29 17:10:30	<--	famubu (~famubu@117.206.34.234) has quit (Ping timeout: 265 seconds)
+2021-03-29 17:10:38	<--	borne (~fritjof@87.123.110.6) has quit (Ping timeout: 240 seconds)
+2021-03-29 17:32:05	-->	Tuplanolla (~Tuplanoll@91-159-68-239.elisa-laajakaista.fi) has joined #coq
+2021-03-29 17:36:09	-->	borne (~fritjof@200116b864978000f7ed9fd86a2491f0.dip.versatel-1u1.de) has joined #coq
+2021-03-29 17:37:22	-->	idhugo__ (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has joined #coq
+2021-03-29 17:45:37	<--	SrPx (sid108780@gateway/web/irccloud.com/x-bbnjzembhmbnppsc) has quit (Ping timeout: 276 seconds)
+2021-03-29 17:46:55	<--	mudri (sid317655@gateway/web/irccloud.com/x-mxbgcmszbbzcrnwx) has quit (Ping timeout: 276 seconds)
+2021-03-29 17:47:20	-->	SrPx (sid108780@gateway/web/irccloud.com/x-mmboofbtgdacydlo) has joined #coq
+2021-03-29 17:48:06	-->	mudri (sid317655@gateway/web/irccloud.com/x-bcigdzdisjxobsht) has joined #coq
+2021-03-29 18:00:37	<--	idhugo__ (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has quit (Remote host closed the connection)
+2021-03-29 18:01:03	-->	idhugo__ (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has joined #coq
+2021-03-29 18:36:39	<--	borne (~fritjof@200116b864978000f7ed9fd86a2491f0.dip.versatel-1u1.de) has quit (Ping timeout: 245 seconds)
+2021-03-29 18:44:06	<--	ByronJohnson (~bairyn@unaffiliated/bob0) has quit (Ping timeout: 246 seconds)
+2021-03-29 18:55:14	-->	ByronJohnson (~bairyn@unaffiliated/bob0) has joined #coq
+2021-03-29 18:57:47	-->	famubu (~famubu@117.206.34.234) has joined #coq
+2021-03-29 19:37:18	<--	idhugo__ (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has quit (Ping timeout: 240 seconds)
+2021-03-29 19:41:38	<--	famubu (~famubu@117.206.34.234) has quit (Ping timeout: 268 seconds)
+2021-03-29 19:59:22	-->	idhugo__ (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has joined #coq
+2021-03-29 20:12:51	<--	stelleg_ (~george@c-69-254-151-147.hsd1.nm.comcast.net) has quit (Read error: Connection reset by peer)
+2021-03-29 20:13:32	-->	stelleg (~george@c-69-254-151-147.hsd1.nm.comcast.net) has joined #coq
+2021-03-29 20:41:43	<--	darjeeling_ (~darjeelin@115.215.42.89) has quit (Ping timeout: 265 seconds)
+2021-03-29 20:54:34	-->	darjeeling_ (~darjeelin@122.245.122.120) has joined #coq
+2021-03-29 21:01:36	<--	delysin (~delysid@pool-71-174-234-154.bstnma.fios.verizon.net) has quit (Quit: WeeChat 3.1)
+2021-03-29 21:04:21	-->	delysin (~delysid@pool-71-174-234-154.bstnma.fios.verizon.net) has joined #coq
+2021-03-29 21:10:05	<--	idhugo__ (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has quit (Remote host closed the connection)
+2021-03-29 21:55:04	-->	picolino_ (~picolino@80.215.34.174) has joined #coq
+2021-03-29 21:56:36	<--	picolino (~picolino@80.215.156.157) has quit (Ping timeout: 246 seconds)
+2021-03-29 22:57:01	-->	richbridger (~richbridg@089144195136.atnat0004.highway.a1.net) has joined #coq
+2021-03-29 23:38:03	-->	borne (~fritjof@200116b864978000f7ed9fd86a2491f0.dip.versatel-1u1.de) has joined #coq
+2021-03-30 00:03:47	-->	stultulo (~f8l@c137-255.icpnet.pl) has joined #coq
+2021-03-30 00:06:11	<--	f8l (~f8l@c137-255.icpnet.pl) has quit (Ping timeout: 240 seconds)
+2021-03-30 00:11:29	<--	megane (~megane@unaffiliated/megane) has quit (Ping timeout: 265 seconds)
+2021-03-30 00:28:41	-->	megane (~megane@unaffiliated/megane) has joined #coq
+2021-03-30 00:37:43	<--	borne (~fritjof@200116b864978000f7ed9fd86a2491f0.dip.versatel-1u1.de) has quit (Ping timeout: 276 seconds)
+2021-03-30 01:03:46	<--	river (~rain1@unaffiliated/rain1) has quit (Quit: WeeChat 3.1)
+2021-03-30 01:06:39	<--	megane (~megane@unaffiliated/megane) has quit (Ping timeout: 246 seconds)
+2021-03-30 01:24:46	<--	Tuplanolla (~Tuplanoll@91-159-68-239.elisa-laajakaista.fi) has quit (Quit: Leaving.)
+2021-03-30 01:44:57	-->	megane (~megane@unaffiliated/megane) has joined #coq
+2021-03-30 03:43:32	<--	megane (~megane@unaffiliated/megane) has quit (Ping timeout: 252 seconds)
+2021-03-30 03:46:20	<--	Guest55480 (~m0rphism@HSI-KBW-085-216-104-059.hsi.kabelbw.de) has quit (Ping timeout: 268 seconds)
+2021-03-30 04:02:59	<--	zebrag (~inkbottle@aaubervilliers-654-1-98-245.w86-212.abo.wanadoo.fr) has quit (Quit: Konversation terminated!)
+2021-03-30 04:11:16	-->	megane (~megane@unaffiliated/megane) has joined #coq
+2021-03-30 04:27:12	<--	megane (~megane@unaffiliated/megane) has quit (Ping timeout: 246 seconds)
+2021-03-30 04:43:45	-->	famubu (~famubu@117.206.44.110) has joined #coq
+2021-03-30 05:05:15	-->	megane (~megane@unaffiliated/megane) has joined #coq
+2021-03-30 05:35:46	-->	borne (~fritjof@200116b864978000f7ed9fd86a2491f0.dip.versatel-1u1.de) has joined #coq
+2021-03-30 06:13:57	<--	borne (~fritjof@200116b864978000f7ed9fd86a2491f0.dip.versatel-1u1.de) has quit (Ping timeout: 246 seconds)
+2021-03-30 06:15:57	-->	borne (~fritjof@200116b864cfc8000bd234a035e38942.dip.versatel-1u1.de) has joined #coq
+2021-03-30 07:07:26	<--	aindilis (~aindilis@172-12-3-117.lightspeed.sgnwmi.sbcglobal.net) has quit (Ping timeout: 240 seconds)
+2021-03-30 07:59:03	-->	mbuf (~Shakthi@122.164.45.183) has joined #coq
+2021-03-30 08:18:35	<--	famubu (~famubu@117.206.44.110) has quit (Ping timeout: 246 seconds)
+2021-03-30 08:18:52	-->	famubu (~famubu@117.206.44.110) has joined #coq
+2021-03-30 08:46:35	<--	roconnor (~roconnor@host-45-58-230-226.dyn.295.ca) has quit (Ping timeout: 246 seconds)
+2021-03-30 08:53:27	-->	graf_blutwurst (~user@2001:171b:226e:adc0:5cae:c3e0:4b1f:9d86) has joined #coq
+2021-03-30 09:13:49	<--	borne (~fritjof@200116b864cfc8000bd234a035e38942.dip.versatel-1u1.de) has quit (Ping timeout: 276 seconds)
+2021-03-30 09:17:39	<--	kadoban_ (~mud@unaffiliated/kadoban) has quit (Ping timeout: 248 seconds)
+2021-03-30 09:17:42	-->	kadoban__ (~mud@unaffiliated/kadoban) has joined #coq
+2021-03-30 09:46:10	-->	shachaf_ (~shachaf@unaffiliated/shachaf) has joined #coq
+2021-03-30 09:47:00	<--	mbuf (~Shakthi@122.164.45.183) has quit (Remote host closed the connection)
+2021-03-30 09:47:00	<--	shachaf (~shachaf@unaffiliated/shachaf) has quit (Ping timeout: 260 seconds)
+2021-03-30 09:47:01	<--	Cale (~cale@cpef48e38ee8583-cm0c473de9d680.cpe.net.cable.rogers.com) has quit (Ping timeout: 260 seconds)
+2021-03-30 09:47:33	-->	mbuf (~Shakthi@122.164.45.183) has joined #coq
+2021-03-30 09:47:39	-->	Cale (~cale@cpef48e38ee8583-cm0c473de9d680.cpe.net.cable.rogers.com) has joined #coq
+2021-03-30 09:49:52	-->	borne (~fritjof@200116b864cfc800f7ed9fd86a2491f0.dip.versatel-1u1.de) has joined #coq
+2021-03-30 10:14:57	<--	natechan (~natechan@108-233-125-227.lightspeed.sntcca.sbcglobal.net) has quit (Ping timeout: 260 seconds)
+2021-03-30 10:16:26	-->	natechan (~natechan@108-233-125-227.lightspeed.sntcca.sbcglobal.net) has joined #coq
+2021-03-30 10:26:13	-->	Guest55480 (~m0rphism@HSI-KBW-085-216-104-059.hsi.kabelbw.de) has joined #coq
+2021-03-30 10:41:10	-->	river (~rain1@unaffiliated/rain1) has joined #coq
+2021-03-30 10:44:09	<--	borne (~fritjof@200116b864cfc800f7ed9fd86a2491f0.dip.versatel-1u1.de) has quit (Ping timeout: 246 seconds)
+2021-03-30 10:44:26	-->	borne (~fritjof@83.135.92.162) has joined #coq
+2021-03-30 11:53:57	-->	idhugo (~idhugo@87-49-45-185-mobile.dk.customer.tdc.net) has joined #coq
+2021-03-30 12:18:29	-->	idhugo_ (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has joined #coq
+2021-03-30 12:20:54	<--	idhugo (~idhugo@87-49-45-185-mobile.dk.customer.tdc.net) has quit (Ping timeout: 252 seconds)
+2021-03-30 13:03:50	<--	famubu (~famubu@117.206.44.110) has quit (Ping timeout: 246 seconds)
+2021-03-30 13:12:22	<--	dr-orlovsky (~dr-orlovs@31.14.40.19) has quit (Quit: ZNC 1.8.0 - https://znc.in)
+2021-03-30 13:18:07	-->	roconnor (~roconnor@host-184-164-13-101.dyn.295.ca) has joined #coq
+2021-03-30 13:20:52	<--	rodgort (~rodgort@static.38.6.217.95.clients.your-server.de) has quit (Quit: Leaving)
+2021-03-30 13:24:23	-->	rodgort (~rodgort@static.38.6.217.95.clients.your-server.de) has joined #coq
+2021-03-30 13:27:25	SIben	Hi! I wonder why, when declaring a Program Fixpoint with a structurally decreasing argument, the recursive function is not accessible in the hypotheses of the obligations. However, it is there when writing {measure structarg} instead. Why is this different?
+2021-03-30 13:36:44	-->	famubu (~famubu@117.206.44.110) has joined #coq
+2021-03-30 14:10:52	<--	famubu (~famubu@117.206.44.110) has quit (Quit: leaving)
+2021-03-30 14:48:36	-->	dr-orlovsky (~dr-orlovs@31.14.40.19) has joined #coq
+2021-03-30 15:11:35	-->	idhugo__ (~idhugo@87-49-45-185-mobile.dk.customer.tdc.net) has joined #coq
+2021-03-30 15:14:32	<--	idhugo_ (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has quit (Ping timeout: 268 seconds)
+2021-03-30 16:20:50	<--	idhugo__ (~idhugo@87-49-45-185-mobile.dk.customer.tdc.net) has quit (Ping timeout: 260 seconds)
+2021-03-30 16:47:34	-->	brj (~hogfather@123.201.77.51) has joined #coq
+2021-03-30 16:58:51	Putonlalla	The rooster can be mysterious.
+2021-03-30 17:35:56	-->	Tuplanolla (~Tuplanoll@91-159-68-239.elisa-laajakaista.fi) has joined #coq
+2021-03-30 17:45:40	<--	graf_blutwurst (~user@2001:171b:226e:adc0:5cae:c3e0:4b1f:9d86) has quit (Remote host closed the connection)
+2021-03-30 18:15:46	<--	brj (~hogfather@123.201.77.51) has quit (Ping timeout: 240 seconds)
+2021-03-30 18:17:55	-->	brj (~hogfather@219.91.183.42) has joined #coq
+2021-03-30 18:23:07	--	shachaf_ is now known as shachaf
+2021-03-30 18:26:27	-->	idhugo__ (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has joined #coq
+2021-03-30 18:33:56	<--	mbuf (~Shakthi@122.164.45.183) has quit (Quit: Leaving)
+2021-03-30 19:03:18	<--	xelxebar (~xelxebar@gateway/tor-sasl/xelxebar) has quit (Remote host closed the connection)
+2021-03-30 19:03:34	-->	xelxebar (~xelxebar@gateway/tor-sasl/xelxebar) has joined #coq
+2021-03-30 19:15:33	<--	idhugo__ (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has quit (Remote host closed the connection)
+2021-03-30 19:16:00	-->	idhugo__ (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has joined #coq
+2021-03-30 19:23:54	<--	idhugo__ (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has quit (Ping timeout: 246 seconds)
+2021-03-30 19:45:39	-->	idhugo__ (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has joined #coq
+2021-03-30 20:49:18	<--	RalfJ (~quassel@r-passerv.ralfj.de) has quit (Ping timeout: 246 seconds)
+2021-03-30 20:52:51	<--	picolino_ (~picolino@80.215.34.174) has quit (Read error: Connection reset by peer)
+2021-03-30 20:53:01	-->	RalfJ (~quassel@r-passerv.ralfj.de) has joined #coq
+2021-03-30 20:57:42	-->	picolino (~picolino@45.228.4.93.rev.sfr.net) has joined #coq
+2021-03-30 21:20:32	<--	anderslu1dstedt (~anders@h-82-196-111-120.NA.cust.bahnhof.se) has quit (Quit: leaving)
+2021-03-30 21:34:55	-->	anderslundstedt (~anders@h-82-196-111-120.NA.cust.bahnhof.se) has joined #coq
+2021-03-30 22:09:37	pgiarrusso	SIben: you're dealing with Program, so if something looks weird, it probably is a bug.
+2021-03-30 22:18:11	<--	idhugo__ (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has quit (Ping timeout: 268 seconds)
+2021-03-30 22:22:26	<--	borne (~fritjof@83.135.92.162) has quit (Ping timeout: 246 seconds)
+2021-03-30 22:30:40	<--	Nokurn (~Nokurn@cpe-108-185-62-246.socal.res.rr.com) has quit (Quit: ZNC 1.7.2+deb3 - https://znc.in)
+2021-03-30 22:35:30	-->	Nokurn (~Nokurn@cpe-108-185-62-246.socal.res.rr.com) has joined #coq
+2021-03-30 22:47:31	<--	Nokurn (~Nokurn@cpe-108-185-62-246.socal.res.rr.com) has quit (Quit: ZNC 1.7.2+deb3 - https://znc.in)
+2021-03-30 22:47:31	<--	ByronJohnson (~bairyn@unaffiliated/bob0) has quit (Ping timeout: 260 seconds)
+2021-03-30 22:48:36	-->	Nokurn (~Nokurn@cpe-108-185-62-246.socal.res.rr.com) has joined #coq
+2021-03-30 22:54:14	-->	ByronJohnson (~bairyn@unaffiliated/bob0) has joined #coq
+2021-03-30 22:57:45	<--	Nokurn (~Nokurn@cpe-108-185-62-246.socal.res.rr.com) has quit (Ping timeout: 246 seconds)
+2021-03-30 23:00:18	<--	ByronJohnson (~bairyn@unaffiliated/bob0) has quit (Ping timeout: 240 seconds)
+2021-03-30 23:00:53	-->	Nokurn (~Nokurn@cpe-108-185-62-246.socal.res.rr.com) has joined #coq
+2021-03-30 23:11:09	-->	aindilis (~aindilis@172-12-3-117.lightspeed.sgnwmi.sbcglobal.net) has joined #coq
+2021-03-30 23:11:30	-->	ByronJohnson (~bairyn@unaffiliated/bob0) has joined #coq
+2021-03-30 23:15:58	<--	ByronJohnson (~bairyn@unaffiliated/bob0) has quit (Ping timeout: 240 seconds)
+2021-03-30 23:22:10	-->	ByronJohnson (~bairyn@unaffiliated/bob0) has joined #coq
+2021-03-30 23:34:19	-->	borne (~fritjof@200116b864cfc800f7ed9fd86a2491f0.dip.versatel-1u1.de) has joined #coq
+2021-03-30 23:45:02	<--	ByronJohnson (~bairyn@unaffiliated/bob0) has quit (Ping timeout: 246 seconds)
+2021-03-30 23:51:48	-->	ByronJohnson (~bairyn@unaffiliated/bob0) has joined #coq
+2021-03-31 00:00:47	<--	borne (~fritjof@200116b864cfc800f7ed9fd86a2491f0.dip.versatel-1u1.de) has quit (Ping timeout: 250 seconds)
+2021-03-31 00:40:35	-->	forell_ (~forell@unaffiliated/forell) has joined #coq
+2021-03-31 00:40:47	-->	aj_ (aj@cerulean.erisian.com.au) has joined #coq
+2021-03-31 00:40:50	-->	jjourdan_ (~jjourdan@ulminfo.fr) has joined #coq
+2021-03-31 00:41:23	<--	forell (~forell@unaffiliated/forell) has quit (Ping timeout: 265 seconds)
+2021-03-31 00:41:24	--	forell_ is now known as forell
+2021-03-31 00:41:26	-->	Uma_ (~uma@umazalakain.info) has joined #coq
+2021-03-31 00:41:51	-->	chindy_ (~quassel@51.15.63.78) has joined #coq
+2021-03-31 00:42:16	<--	Ekho (~Ekho@unaffiliated/ekho) has quit (Ping timeout: 265 seconds)
+2021-03-31 00:42:17	<--	chindy (~quassel@51.15.63.78) has quit (Ping timeout: 265 seconds)
+2021-03-31 00:42:38	-->	ian_ (~igloo@matrix.chaos.earth.li) has joined #coq
+2021-03-31 00:43:09	-->	Chobbes_ (~Chobbes@pool-98-115-239-235.phlapa.fios.verizon.net) has joined #coq
+2021-03-31 00:43:13	<--	aj (aj@cerulean.erisian.com.au) has quit (Ping timeout: 240 seconds)
+2021-03-31 00:43:13	<--	Uma (~uma@umazalakain.info) has quit (Ping timeout: 240 seconds)
+2021-03-31 00:43:13	<--	Chobbes (~Chobbes@pool-98-115-239-235.phlapa.fios.verizon.net) has quit (Ping timeout: 240 seconds)
+2021-03-31 00:43:14	<--	jjourdan (~jjourdan@ulminfo.fr) has quit (Ping timeout: 240 seconds)
+2021-03-31 00:43:15	<--	Igloo (~igloo@matrix.chaos.earth.li) has quit (Ping timeout: 240 seconds)
+2021-03-31 00:49:12	-->	Ekho (~Ekho@unaffiliated/ekho) has joined #coq
+2021-03-31 00:55:18	<--	megane (~megane@unaffiliated/megane) has quit (Ping timeout: 240 seconds)
+2021-03-31 01:02:30	-->	megane (~megane@unaffiliated/megane) has joined #coq
+2021-03-31 01:20:32	<--	Tuplanolla (~Tuplanoll@91-159-68-239.elisa-laajakaista.fi) has quit (Quit: Leaving.)
+2021-03-31 02:12:45	<--	xelxebar (~xelxebar@gateway/tor-sasl/xelxebar) has quit (Ping timeout: 240 seconds)
+2021-03-31 02:12:55	-->	xelxebar_ (~xelxebar@gateway/tor-sasl/xelxebar) has joined #coq
+2021-03-31 02:15:36	<--	brj (~hogfather@219.91.183.42) has quit (Ping timeout: 268 seconds)
+2021-03-31 02:17:22	-->	brj (~hogfather@123.201.165.118) has joined #coq
+2021-03-31 02:37:11	<--	Guest55480 (~m0rphism@HSI-KBW-085-216-104-059.hsi.kabelbw.de) has quit (Ping timeout: 268 seconds)
+2021-03-31 04:07:51	<--	RalfJ (~quassel@r-passerv.ralfj.de) has quit (Ping timeout: 246 seconds)
+2021-03-31 04:08:33	-->	RalfJ (~quassel@r-passerv.ralfj.de) has joined #coq
+2021-03-31 04:11:03	--	aj_ is now known as aj
+2021-03-31 04:21:09	<--	RalfJ (~quassel@r-passerv.ralfj.de) has quit (Ping timeout: 246 seconds)
+2021-03-31 06:01:23	-->	borne (~fritjof@200116b864cfc800f7ed9fd86a2491f0.dip.versatel-1u1.de) has joined #coq
+2021-03-31 06:13:53	<--	borne (~fritjof@200116b864cfc800f7ed9fd86a2491f0.dip.versatel-1u1.de) has quit (Ping timeout: 250 seconds)
+2021-03-31 06:15:33	-->	borne (~fritjof@200116b86411e500998fce1c43ef4e0a.dip.versatel-1u1.de) has joined #coq
+2021-03-31 07:20:46	<--	borne (~fritjof@200116b86411e500998fce1c43ef4e0a.dip.versatel-1u1.de) has quit (Ping timeout: 245 seconds)
+2021-03-31 08:08:07	-->	mbuf (~Shakthi@171.49.202.215) has joined #coq
+2021-03-31 08:35:44	-->	RalfJ (~quassel@r-passerv.ralfj.de) has joined #coq
+2021-03-31 09:23:12	<--	RalfJ (~quassel@r-passerv.ralfj.de) has quit (Ping timeout: 246 seconds)
+2021-03-31 09:24:58	-->	RalfJ (~quassel@r-passerv.ralfj.de) has joined #coq
+2021-03-31 09:30:24	-->	kadoban_ (~mud@unaffiliated/kadoban) has joined #coq
+2021-03-31 09:30:40	<--	kadoban__ (~mud@unaffiliated/kadoban) has quit (Ping timeout: 252 seconds)
+2021-03-31 09:49:57	-->	borne (~fritjof@200116b86411e500f7ed9fd86a2491f0.dip.versatel-1u1.de) has joined #coq
+2021-03-31 10:04:30	<--	RalfJ (~quassel@r-passerv.ralfj.de) has quit (Ping timeout: 246 seconds)
+2021-03-31 10:06:11	-->	Guest55480 (~m0rphism@HSI-KBW-085-216-104-059.hsi.kabelbw.de) has joined #coq
+2021-03-31 10:15:18	<--	brj (~hogfather@123.201.165.118) has quit (Ping timeout: 240 seconds)
+2021-03-31 10:15:19	-->	RalfJ (~quassel@r-passerv.ralfj.de) has joined #coq
+2021-03-31 10:17:44	-->	brj (~hogfather@219.91.254.96) has joined #coq
+2021-03-31 10:19:54	<--	RalfJ (~quassel@r-passerv.ralfj.de) has quit (Ping timeout: 246 seconds)
+2021-03-31 10:23:27	-->	RalfJ (~quassel@r-passerv.ralfj.de) has joined #coq
+2021-03-31 10:45:27	<--	RalfJ (~quassel@r-passerv.ralfj.de) has quit (Ping timeout: 246 seconds)
+2021-03-31 10:48:12	-->	RalfJ (~quassel@r-passerv.ralfj.de) has joined #coq
+2021-03-31 10:56:17	-->	idhugo (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has joined #coq
+2021-03-31 11:22:33	<--	RalfJ (~quassel@r-passerv.ralfj.de) has quit (Ping timeout: 246 seconds)
+2021-03-31 11:23:37	-->	RalfJ (~quassel@r-passerv.ralfj.de) has joined #coq
+2021-03-31 11:47:03	<--	RalfJ (~quassel@r-passerv.ralfj.de) has quit (Ping timeout: 246 seconds)
+2021-03-31 13:06:57	<--	nf (~n@monade.li) has quit (Quit: Fairfarren.)
+2021-03-31 13:07:40	-->	nf (~n@monade.li) has joined #coq
+2021-03-31 14:07:48	-->	RalfJ (~quassel@r-passerv.ralfj.de) has joined #coq
+2021-03-31 14:13:03	--	You are now known as m1dnight__
+2021-03-31 14:13:11	--	You are now known as m1dnight_
+2021-03-31 14:15:35	<--	idhugo (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has quit (Ping timeout: 252 seconds)
+2021-03-31 14:41:24	-->	idhugo (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has joined #coq
+2021-03-31 15:11:09	<--	idhugo (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has quit (Remote host closed the connection)
+2021-03-31 15:11:36	-->	idhugo (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has joined #coq
+2021-03-31 15:17:01	<--	idhugo (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has quit (Ping timeout: 260 seconds)
+2021-03-31 15:24:49	-->	idhugo (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has joined #coq
+2021-03-31 15:29:52	<--	idhugo (~idhugo@87-49-147-45-mobile.dk.customer.tdc.net) has quit (Ping timeout: 268 seconds)
+2021-03-31 17:03:17	-->	Eoco (~ian@x-160-94-179-157.acm.umn.edu) has joined #coq
+2021-03-31 17:31:51	<--	aindilis (~aindilis@172-12-3-117.lightspeed.sgnwmi.sbcglobal.net) has quit (Remote host closed the connection)
+2021-03-31 18:00:03	<--	Martin[m]2 (martinundz@gateway/shell/matrix.org/x-lxdplqsyrtsmjlzj) has quit (Quit: Idle for 30+ days)
+2021-03-31 18:07:36	-->	aindilis (~aindilis@172-12-3-117.lightspeed.sgnwmi.sbcglobal.net) has joined #coq
+2021-03-31 18:16:16	<--	brj (~hogfather@219.91.254.96) has quit (Ping timeout: 258 seconds)
+2021-03-31 18:17:26	-->	Tuplanolla (~Tuplanoll@91-159-68-239.elisa-laajakaista.fi) has joined #coq
+2021-03-31 18:18:08	-->	brj (~hogfather@123.201.77.0) has joined #coq
+2021-03-31 19:08:38	<--	mbuf (~Shakthi@171.49.202.215) has quit (Quit: Leaving)
+2021-03-31 19:10:08	<--	zfnmxt (~zfnmxt@unaffiliated/zfnmxt) has quit (Quit: Bye!)
+2021-03-31 19:10:15	-->	zfnmxt_ (~zfnmxt@unaffiliated/zfnmxt) has joined #coq
+2021-03-31 19:38:52	<--	borne (~fritjof@200116b86411e500f7ed9fd86a2491f0.dip.versatel-1u1.de) has quit (Ping timeout: 276 seconds)
+2021-03-31 20:06:49	-->	borne (~fritjof@200116b86411e500f7ed9fd86a2491f0.dip.versatel-1u1.de) has joined #coq
+2021-03-31 21:04:53	pgiarrusso	For users of SProp (hi Putonlalla ) did I post https://github.com/coq/coq/issues/14015 ?
+2021-03-31 22:00:17	<--	borne (~fritjof@200116b86411e500f7ed9fd86a2491f0.dip.versatel-1u1.de) has quit (Ping timeout: 250 seconds)
+2021-03-31 22:12:56	-->	borne (~fritjof@200116b86411e500f7ed9fd86a2491f0.dip.versatel-1u1.de) has joined #coq
+2021-03-31 22:14:45	Tuplanolla	I saw it already.
+2021-03-31 22:38:55	Tuplanolla	I still read breaking sr as breaking special relativity.
+2021-03-31 23:03:14	dh`	must be a pretty heavy issue
+2021-03-31 23:05:00	--	ian_ is now known as Igloo
+2021-03-31 23:16:12	<--	borne (~fritjof@200116b86411e500f7ed9fd86a2491f0.dip.versatel-1u1.de) has quit (Ping timeout: 246 seconds)
+2021-03-31 23:23:56	-->	borne (~fritjof@200116b86411e500f7ed9fd86a2491f0.dip.versatel-1u1.de) has joined #coq
+2021-04-01 00:18:44	<--	Tuplanolla (~Tuplanoll@91-159-68-239.elisa-laajakaista.fi) has quit (Quit: Leaving.)
+2021-04-01 00:34:23	pgiarrusso	dh`: 👏
+2021-04-01 00:40:12	<--	borne (~fritjof@200116b86411e500f7ed9fd86a2491f0.dip.versatel-1u1.de) has quit (Ping timeout: 246 seconds)
+2021-04-01 00:42:37	-->	borne (~fritjof@vpn05.bremen.freifunk.net) has joined #coq
+2021-04-01 02:03:19	<--	borne (~fritjof@vpn05.bremen.freifunk.net) has quit (Ping timeout: 265 seconds)
+2021-04-01 02:06:13	-->	borne (~fritjof@vpn05.bremen.freifunk.net) has joined #coq
+2021-04-01 02:10:56	<--	megane (~megane@unaffiliated/megane) has quit (Ping timeout: 252 seconds)
+2021-04-01 02:13:26	<--	natechan (~natechan@108-233-125-227.lightspeed.sntcca.sbcglobal.net) has quit (Ping timeout: 240 seconds)
+2021-04-01 02:15:18	<--	brj (~hogfather@123.201.77.0) has quit (Ping timeout: 240 seconds)
+2021-04-01 02:16:44	-->	megane (~megane@unaffiliated/megane) has joined #coq
+2021-04-01 02:17:27	-->	brj (~hogfather@123.201.165.65) has joined #coq
+2021-04-01 02:19:48	-->	natechan (~natechan@108-233-125-227.lightspeed.sntcca.sbcglobal.net) has joined #coq
+2021-04-01 02:35:52	<--	natechan (~natechan@108-233-125-227.lightspeed.sntcca.sbcglobal.net) has quit (Ping timeout: 268 seconds)
+2021-04-01 03:01:38	<--	Guest55480 (~m0rphism@HSI-KBW-085-216-104-059.hsi.kabelbw.de) has quit (Ping timeout: 246 seconds)
+2021-04-01 03:40:46	<--	megane (~megane@unaffiliated/megane) has quit (Ping timeout: 240 seconds)
+2021-04-01 03:42:48	-->	megane (~megane@unaffiliated/megane) has joined #coq
+2021-04-01 04:04:44	-->	rdivyanshu (uid322626@gateway/web/irccloud.com/x-fwmlwlhxosxfeijx) has joined #coq
+2021-04-01 04:37:15	-->	aquijoule_ (~richbridg@213-225-12-114.nat.highway.a1.net) has joined #coq
+2021-04-01 04:39:26	<--	richbridger (~richbridg@089144195136.atnat0004.highway.a1.net) has quit (Ping timeout: 240 seconds)
+2021-04-01 04:47:50	<--	megane (~megane@unaffiliated/megane) has quit (Ping timeout: 268 seconds)
+2021-04-01 04:48:58	-->	megane (~megane@unaffiliated/megane) has joined #coq
+2021-04-01 06:13:33	<--	rdivyanshu (uid322626@gateway/web/irccloud.com/x-fwmlwlhxosxfeijx) has quit (Quit: Connection closed for inactivity)
+2021-04-01 08:30:44	-->	graf_blutwurst (~user@2001:171b:226e:adc0:7c51:155f:af77:886d) has joined #coq
+2021-04-01 08:33:26	<--	borne (~fritjof@vpn05.bremen.freifunk.net) has quit (Ping timeout: 246 seconds)
+2021-04-01 09:42:29	-->	Guest55480 (~m0rphism@HSI-KBW-085-216-104-059.hsi.kabelbw.de) has joined #coq
+2021-04-01 09:44:07	-->	borne (~fritjof@vpn05.bremen.freifunk.net) has joined #coq
+2021-04-01 10:06:56	-->	famubu (~famubu@117.206.33.15) has joined #coq
+2021-04-01 10:15:38	<--	brj (~hogfather@123.201.165.65) has quit (Ping timeout: 240 seconds)
+2021-04-01 10:17:50	-->	brj (~hogfather@203.109.108.70) has joined #coq

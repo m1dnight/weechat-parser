@@ -18,7 +18,7 @@ defmodule Parser do
   nick = utf8_string([{:not, ?\n}, {:not, ?\s}, {:not, ?\t}], min: 1)
 
   host = utf8_string([{:not, ?\n}, {:not, ?\s}, {:not, ?\t}, {:not, ?\)}], min: 0)
-  reason = utf8_string([?a..?z, ?A..?Z, ?0..?9, ?\., ?\@, ?\~, ?\-, ?\_, ?\s], min: 0)
+  reason = utf8_string([?a..?z, ?A..?Z, ?0..?9, ?\., ?\@, ?\~, ?\-, ?\_, ?\s, ?\:], min: 0)
 
   msg = utf8_string([{:not, ?\n}], min: 0)
 
