@@ -26,13 +26,7 @@ defmodule WeechatParser do
                     {:ok, parse_me(res)}
 
                   {:error, _, _rest, _context, _line, _column} ->
-                    case Parser.event(line) do
-                      {:ok, res, _, _, _, _} ->
-                        {:ok, res}
-
-                      {:error, _, _rest, _context, _line, _column} ->
-                        {:error, "Line '#{line}' not understood"}
-                    end
+                    {:error, "Line '#{line}' not understood"}
                 end
             end
         end

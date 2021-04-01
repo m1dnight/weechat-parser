@@ -27,25 +27,6 @@ defmodule Parser do
     |> utf8_string([?a..?z, ?A..?Z, ?0..?9, ?\., ?\@, ?\~, ?\-, ?\_, ?\#], min: 1)
 
   #
-  # Event (This should be refined)
-  #
-  defparsec(
-    :event,
-    date
-    |> ignore(string(" "))
-    |> concat(time)
-    |> ignore(ascii_char([?\t]))
-    |> ignore(ascii_char([?\s]))
-    |> ignore(ascii_char([?\*]))
-    |> ignore(ascii_char([?\t]))
-    |> concat(nick)
-    |> ignore(ascii_char([?\s]))
-    |> concat(msg)
-    |> optional(ignore(ascii_char([?\n]))),
-    debug: false
-  )
-
-  #
   # Me
   #
   defparsec(
